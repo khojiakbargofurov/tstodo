@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Data Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="max-w-md mx-auto">
+  <h1 class="pt-8 pb-6 font-bold text-3xl">User Data</h1>
+
+  <form id="userForm" class="max-w-md mx-auto">
+    <label class="">
+      <span>First Name:</span>
+      <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="firstName" id="firstName" required />
+    </label>
+    <br>
+    <label>
+      <span>Last Name:</span>
+      <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="lastName" id="lastName" required/>
+    </label>
+    <br>
+    <label>
+      <span>Age:</span>
+      <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="number" name="age" id="age" required/>
+    </label>
+    <br>
+    <label>
+      <span>From:</span>
+      <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" name="from" id="from" required/>
+    </label>
+    <br>
+    <label>
+      <span>Job:</span>
+      <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" name="job" id="job" required/>
+    </label>
+    <br>
+    <div class="" >
+      <span class="mb-4 font-semibold text-gray-900 dark:text-white">Is Married:</span>
+      <label class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+        <small class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">True</small>
+        <input type="radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" name="ismarried" value="true" required/>
+      </label>
+      <label class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+        <small class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">False</small>
+        <input type="radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" name="ismarried" value="false" required/>
+      </label>
+    </div>
+    <br>
+    <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="submit" class="btn">Submit</button>
+  </form> 
+
+  <div class="card"></div>
+
+  <script src="./public/app.js"></script>
+</body>
+</html>
